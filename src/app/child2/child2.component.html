@@ -1,0 +1,10 @@
+<div class="mt-2 px-2">
+    <div style=" outline-style: solid; outline-color: yellow; width: 460px;height: 250px; overflow: scroll;">
+        <h4 class="text-center">Let's get some work done!</h4>
+        <div *ngFor="let i of sendTask" #taskContainer class="d-flex mx-2">
+            <button class="btn btn-outline-success" (click)="check()">Complete</button>
+            <button class="btn btn-outline-danger" (click)="remove(i)">Delete</button>
+            <span id="newTask" #newTask class="mx-2 mt-2">{{i}}</span>
+        </div>
+    </div>
+</div>
